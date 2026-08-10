@@ -9,8 +9,7 @@
       "description": "キーワード（カンマ区切りで複数対応）",
       "editor": "textfield",
       "default": "Fender",
-      "prefill": "Fender",
-      "required": true
+      "prefill": "Fender"
     },
     "maxItems": {
       "type": "number",
