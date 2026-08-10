@@ -1,0 +1,37 @@
+{
+  "searchKeyword": {
+    "type": "string",
+    "title": "検索キーワード",
+    "description": "キーワード（カンマ区切りで複数対応）",
+    "editor": "textfield",
+    "default": "Fender",
+    "prefill": "Fender",
+    "required": true
+  },
+  "maxItems": {
+    "type": "number",
+    "title": "最大アイテム数",
+    "description": "取得する最大商品数",
+    "editor": "number",
+    "default": 100
+  },
+  "maxPages": {
+    "type": "number",
+    "title": "最大ページ数",
+    "description": "キーワードごとの最大ページ数（1ページ20件）",
+    "editor": "number",
+    "default": 3
+  },
+  "proxyConfiguration": {
+    "type": "object",
+    "title": "Proxy configuration",
+    "description": "Use Apify proxy",
+    "editor": "proxy",
+    "default": {
+      "useApifyProxy": true
+    },
+    "prefill": {
+      "useApifyProxy": true
+    }
+  }
+}

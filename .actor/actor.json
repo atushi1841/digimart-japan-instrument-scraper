@@ -1,0 +1,92 @@
+{
+  "actorSpecification": 1,
+  "name": "digimart-japan-used-instrument-scraper",
+  "title": "Digimart Japan Used Instruments — Full Listings & Prices",
+  "version": "0.1",
+  "buildTag": "latest",
+  "dockerfile": "./Dockerfile",
+  "input": "./INPUT_SCHEMA.json",
+  "outputSchema": {
+    "actorOutputSchemaVersion": 1,
+    "title": "Digimart instrument listings",
+    "type": "object",
+    "properties": {
+      "productId": {
+        "type": "string",
+        "description": "Digimart product ID",
+        "template": "{{productId}}"
+      },
+      "title": {
+        "type": "string",
+        "description": "Instrument title",
+        "template": "{{title}}"
+      },
+      "brand": {
+        "type": "string",
+        "description": "Brand (e.g. Fender, Gibson, Ibanez)",
+        "template": "{{brand}}"
+      },
+      "category": {
+        "type": "string",
+        "description": "Product category",
+        "template": "{{category}}"
+      },
+      "price": {
+        "type": "string",
+        "description": "Selling price in JPY",
+        "template": "{{price}}"
+      },
+      "listPrice": {
+        "type": "string",
+        "description": "Original list price in JPY",
+        "template": "{{listPrice}}"
+      },
+      "condition": {
+        "type": "string",
+        "description": "Condition rank (S/A/B/C/D)",
+        "template": "{{condition}}"
+      },
+      "instruType": {
+        "type": "string",
+        "description": "Instrument type code (1=new, 2=used, 3=vintage, 4=outlet, 5=B-stock)",
+        "template": "{{instruType}}"
+      },
+      "instruTypeLabel": {
+        "type": "string",
+        "description": "Instrument type label in Japanese",
+        "template": "{{instruTypeLabel}}"
+      },
+      "inStock": {
+        "type": "string",
+        "description": "In-stock status",
+        "template": "{{inStock}}"
+      },
+      "shopName": {
+        "type": "string",
+        "description": "Selling shop name",
+        "template": "{{shopName}}"
+      },
+      "registeredAt": {
+        "type": "string",
+        "description": "Listing registration timestamp",
+        "template": "{{registeredAt}}"
+      },
+      "imageUrl": {
+        "type": "string",
+        "description": "Product image URL",
+        "template": "{{imageUrl}}"
+      },
+      "productUrl": {
+        "type": "string",
+        "description": "Product page URL",
+        "template": "{{productUrl}}"
+      },
+      "scrapedAt": {
+        "type": "string",
+        "description": "Scrape timestamp",
+        "template": "{{scrapedAt}}"
+      }
+    },
+    "additionalProperties": true
+  }
+}
