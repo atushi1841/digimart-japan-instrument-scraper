@@ -8,7 +8,6 @@
       "title": "検索キーワード",
       "description": "キーワード（カンマ区切りで複数対応）",
       "editor": "textfield",
-      "default": "Fender",
       "prefill": "Fender"
     },
     "maxItems": {
@@ -38,5 +37,7 @@
       }
     }
   },
-  "required": ["searchKeyword"]
+  "required": [
+    "searchKeyword"
+  ]
 }
